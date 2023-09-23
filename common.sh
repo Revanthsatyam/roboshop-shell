@@ -56,23 +56,23 @@ func_nodejs() {
 }
 
 func_java() {
-  echo -e "\e[35m>>>>>>>>> Create ${component} Service <<<<<<<<<<\e[0m" &>>${log}
-  cp ${component}.service /etc/systemd/system/${component}.service
+  echo -e "\e[35m>>>>>>>>> Create ${component} Service <<<<<<<<<<\e[0m"
+  cp ${component}.service /etc/systemd/system/${component}.service &>>${log}
 
-  echo -e "\e[35m>>>>>>>>> Install Maven <<<<<<<<<<\e[0m" &>>${log}
-  yum install maven -y
+  echo -e "\e[35m>>>>>>>>> Install Maven <<<<<<<<<<\e[0m"
+  yum install maven -y &>>${log}
 
   func_apppreq
 
-  echo -e "\e[35m>>>>>>>>> Build ${component} Service <<<<<<<<<<\e[0m" &>>${log}
-  mvn clean package
-  mv target/${component}-1.0.jar ${component}.jar
+  echo -e "\e[35m>>>>>>>>> Build ${component} Service <<<<<<<<<<\e[0m"
+  mvn clean package &>>${log}
+  mv target/${component}-1.0.jar ${component}.jar &>>${log}
 
-  echo -e "\e[35m>>>>>>>>> Install MySql Client <<<<<<<<<<\e[0m" &>>${log}
-  yum install mysql -y
+  echo -e "\e[35m>>>>>>>>> Install MySql Client <<<<<<<<<<\e[0m"
+  yum install mysql -y &>>${log}
 
-  echo -e "\e[35m>>>>>>>>> Load Schema <<<<<<<<<<\e[0m" &>>${log}
-  mysql -h mysql.rdevops74.online -uroot -pRoboShop@1 < /app/schema/${component}.sql
+  echo -e "\e[35m>>>>>>>>> Load Schema <<<<<<<<<<\e[0m"
+  mysql -h mysql.rdevops74.online -uroot -pRoboShop@1 < /app/schema/${component}.sql &>>${log}
 
   func_systemd
 }
