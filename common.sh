@@ -1,3 +1,31 @@
+log=/tmp/roboshop.log
+
+fun_apppreq() {
+  echo -e "\e[35m>>>>>>>>> Create Application User <<<<<<<<<<\e[0m"
+  useradd roboshop &>>${log}
+
+  echo -e "\e[35m>>>>>>>>> Cleanup Existing Application Content <<<<<<<<<<\e[0m"
+  rm -rf /app &>>${log}
+
+  echo -e "\e[35m>>>>>>>>> Create Application Directory <<<<<<<<<<\e[0m"
+  mkdir /app &>>${log}
+
+  echo -e "\e[35m>>>>>>>>> Download Application Content <<<<<<<<<<\e[0m"
+  curl -o /tmp/${component}.zip https://roboshop-artifacts.s3.amazonaws.com/${component}.zip &>>${log}
+
+  echo -e "\e[35m>>>>>>>>> Extract Application Content <<<<<<<<<<\e[0m"
+  cd /app
+  unzip /tmp/${component}.zip &>>${log}
+  cd /app
+}
+
+func_systemd() {
+  echo -e "\e[35m>>>>>>>>> Start ${component} Service <<<<<<<<<<\e[0m"
+  systemctl daemon-reload &>>${log}
+  systemctl enable ${component} &>>${log}
+  systemctl restart ${component} &>>${log}
+}
+
 func_nodejs() {
   log=/tmp/roboshop.log
 
@@ -13,22 +41,7 @@ func_nodejs() {
   echo -e "\e[35m>>>>>>>>> Install NodeJS <<<<<<<<<<\e[0m"
   yum install nodejs -y &>>${log}
 
-  echo -e "\e[35m>>>>>>>>> Create Application User <<<<<<<<<<\e[0m"
-  useradd roboshop &>>${log}
-
-  echo -e "\e[35m>>>>>>>>> Removing Application Directory <<<<<<<<<<\e[0m"
-  rm -rf /app &>>${log}
-
-  echo -e "\e[35m>>>>>>>>> Create Application Directory <<<<<<<<<<\e[0m"
-  mkdir /app &>>${log}
-
-  echo -e "\e[35m>>>>>>>>> Download Application Content <<<<<<<<<<\e[0m"
-  curl -o /tmp/${component}.zip https://roboshop-artifacts.s3.amazonaws.com/${component}.zip &>>${log}
-
-  echo -e "\e[35m>>>>>>>>> Extract Application Content <<<<<<<<<<\e[0m"
-  cd /app
-  unzip /tmp/${component}.zip &>>${log}
-  cd /app
+  func_apppreq
 
   echo -e "\e[35m>>>>>>>>> Download NodeJS Dependencies <<<<<<<<<<\e[0m"
   npm install &>>${log}
@@ -39,8 +52,27 @@ func_nodejs() {
   echo -e "\e[35m>>>>>>>>> Load ${component} Schema <<<<<<<<<<\e[0m"
   mongo --host mongodb.rdevops74.online </app/schema/${component}.js &>>${log}
 
-  echo -e "\e[35m>>>>>>>>> Start ${component} Service <<<<<<<<<<\e[0m"
-  systemctl daemon-reload &>>${log}
-  systemctl enable ${component} &>>${log}
-  systemctl restart ${component} &>>${log}
+  func_systemd
+}
+
+func_java() {
+  echo -e "\e[35m>>>>>>>>> Create ${component} Service <<<<<<<<<<\e[0m" &>>${log}
+  cp ${component}.service /etc/systemd/system/${component}.service
+
+  echo -e "\e[35m>>>>>>>>> Install Maven <<<<<<<<<<\e[0m" &>>${log}
+  yum install maven -y
+
+  func_apppreq
+
+  echo -e "\e[35m>>>>>>>>> Build ${component} Service <<<<<<<<<<\e[0m" &>>${log}
+  mvn clean package
+  mv target/${component}-1.0.jar ${component}.jar
+
+  echo -e "\e[35m>>>>>>>>> Install MySql Client <<<<<<<<<<\e[0m" &>>${log}
+  yum install mysql -y
+
+  echo -e "\e[35m>>>>>>>>> Load Schema <<<<<<<<<<\e[0m" &>>${log}
+  mysql -h mysql.rdevops74.online -uroot -pRoboShop@1 < /app/schema/${component}.sql
+
+  func_systemd
 }
