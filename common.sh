@@ -1,6 +1,6 @@
 log=/tmp/roboshop.log
 
-fun_apppreq() {
+func_apppreq() {
   echo -e "\e[35m>>>>>>>>> Create Application User <<<<<<<<<<\e[0m"
   useradd roboshop &>>${log}
 
