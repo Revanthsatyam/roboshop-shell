@@ -1,11 +1,28 @@
-echo ">>>>>>>>>> Installing Nginx <<<<<<<<<<"
-yum install nginx -y
-cp nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
+source common.sh
 
-rm -rf /usr/share/nginx/html/*
-curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
+echo -e "\e[35m>>>>>>>>> Install Nginx <<<<<<<<<<\e[0m"
+yum install nginx -y &>>${log}
+func_exit_status
+
+echo -e "\e[35m>>>>>>>>> Copy Roboshop Configuration <<<<<<<<<<\e[0m"
+cp nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf &>>${log}
+func_exit_status
+
+echo -e "\e[35m>>>>>>>>> Cleanup Old Content <<<<<<<<<<\e[0m"
+rm -rf /usr/share/nginx/html/* &>>${log}
+func_exit_status
+
+echo -e "\e[35m>>>>>>>>> Download Application Content <<<<<<<<<<\e[0m"
+curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip &>>${log}
+func_exit_status
+
 cd /usr/share/nginx/html
-unzip /tmp/frontend.zip
 
-systemctl enable nginx
-systemctl restart nginx
+echo -e "\e[35m>>>>>>>>> Extract Application Content <<<<<<<<<<\e[0m"
+unzip /tmp/frontend.zip &>>${log}
+func_exit_status
+
+echo -e "\e[35m>>>>>>>>> Start Nginx Service <<<<<<<<<<\e[0m"
+systemctl enable nginx &>>${log}
+systemctl restart nginx &>>${log}
+func_exit_status
