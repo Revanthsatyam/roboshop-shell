@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79b99a6f-9b1d-4818-b949-c326c62e0220" name="Changes" comment="Password NFR" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2VQYV7OxcGWeaoWdAICQ6KwnBUs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Devops/D74"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79b99a6f-9b1d-4818-b949-c326c62e0220" name="Changes" comment="" />
+      <created>1694769842233</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694769842233</updated>
+    </task>
+    <task id="LOCAL-00001" summary="frontend scripts">
+      <option name="closed" value="true" />
+      <created>1694770421875</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694770421875</updated>
+    </task>
+    <task id="LOCAL-00002" summary="frontend scripts">
+      <option name="closed" value="true" />
+      <created>1694770870203</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694770870203</updated>
+    </task>
+    <task id="LOCAL-00003" summary="roboshop scripts">
+      <option name="closed" value="true" />
+      <created>1694775374024</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694775374024</updated>
+    </task>
+    <task id="LOCAL-00004" summary="dispach and payment scripts">
+      <option name="closed" value="true" />
+      <created>1694775827325</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694775827325</updated>
+    </task>
+    <task id="LOCAL-00005" summary="dispatch and payment service files">
+      <option name="closed" value="true" />
+      <created>1694775942055</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694775942055</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Roboshop scripts, Updated dns records.">
+      <option name="closed" value="true" />
+      <created>1695108135180</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695108135180</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated mongodb IP address in catalogue.sh file.">
+      <option name="closed" value="true" />
+      <created>1695109817271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695109817271</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Roboshop scripts updated dns records.">
+      <option name="closed" value="true" />
+      <created>1695114068681</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695114068681</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Roboshop scripts adding descriptions">
+      <option name="closed" value="true" />
+      <created>1695215821459</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695215821459</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Roboshop scripts adding descriptions">
+      <option name="closed" value="true" />
+      <created>1695373798801</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695373798801</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Roboshop scripts adding descriptions">
+      <option name="closed" value="true" />
+      <created>1695374375743</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695374375743</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Roboshop scripts updating catalogue script">
+      <option name="closed" value="true" />
+      <created>1695374760740</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695374760740</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Roboshop - Adding Redirectors">
+      <option name="closed" value="true" />
+      <created>1695375187873</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695375187873</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Roboshop - Adding Redirectors">
+      <option name="closed" value="true" />
+      <created>1695375429425</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695375429425</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Roboshop - Adding Redirectors">
+      <option name="closed" value="true" />
+      <created>1695375645693</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695375645693</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Roboshop - Adding variables">
+      <option name="closed" value="true" />
+      <created>1695376351171</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1695376351171</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Roboshop - Adding variables">
+      <option name="closed" value="true" />
+      <created>1695376570384</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1695376570384</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Roboshop - Adding variables">
+      <option name="closed" value="true" />
+      <created>1695376788611</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1695376788611</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Roboshop - creating functions.">
+      <option name="closed" value="true" />
+      <created>1695452214410</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1695452214410</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Creating functions in Roboshop.">
+      <option name="closed" value="true" />
+      <created>1695455040750</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1695455040750</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Creating functions in Roboshop.">
+      <option name="closed" value="true" />
+      <created>1695455222267</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1695455222267</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Creating functions in Roboshop.">
+      <option name="closed" value="true" />
+      <created>1695455705996</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1695455705996</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Creating functions in Roboshop.">
+      <option name="closed" value="true" />
+      <created>1695456386605</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1695456386605</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Creating functions in Roboshop.">
+      <option name="closed" value="true" />
+      <created>1695457235319</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1695457235319</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Conditions in roboshop script.">
+      <option name="closed" value="true" />
+      <created>1695645029382</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1695645029382</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Conditions in roboshop script.">
+      <option name="closed" value="true" />
+      <created>1695645382109</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1695645382109</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Conditions in roboshop script.">
+      <option name="closed" value="true" />
+      <created>1695648355578</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1695648355578</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Conditions in roboshop script.">
+      <option name="closed" value="true" />
+      <created>1695649737508</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1695649737508</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Conditions in roboshop script.">
+      <option name="closed" value="true" />
+      <created>1695649938145</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1695649938145</updated>
+    </task>
+    <task id="LOCAL-00030" summary="exit status">
+      <option name="closed" value="true" />
+      <created>1695650820105</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1695650820105</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Password NFR">
+      <option name="closed" value="true" />
+      <created>1695710820375</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1695710820375</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Password NFR">
+      <option name="closed" value="true" />
+      <created>1695712272895</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1695712272895</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Password NFR">
+      <option name="closed" value="true" />
+      <created>1695712495786</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1695712495786</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Password NFR">
+      <option name="closed" value="true" />
+      <created>1695713033746</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1695713033746</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="frontend scripts" />
+    <MESSAGE value="roboshop scripts" />
+    <MESSAGE value="dispach and payment scripts" />
+    <MESSAGE value="dispatch and payment service files" />
+    <MESSAGE value="Roboshop scripts, Updated dns records." />
+    <MESSAGE value="updated mongodb IP address in catalogue.sh file." />
+    <MESSAGE value="Roboshop scripts updated dns records." />
+    <MESSAGE value="Roboshop scripts adding descriptions" />
+    <MESSAGE value="Roboshop scripts updating catalogue script" />
+    <MESSAGE value="Roboshop - Adding Redirectors" />
+    <MESSAGE value="Roboshop - Adding variables" />
+    <MESSAGE value="Roboshop - creating functions." />
+    <MESSAGE value="Creating functions in Roboshop." />
+    <MESSAGE value="Conditions in roboshop script." />
+    <MESSAGE value="exit status" />
+    <MESSAGE value="Password NFR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Password NFR" />
+  </component>
+</project>
