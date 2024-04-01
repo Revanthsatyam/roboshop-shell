@@ -1,23 +1,24 @@
+source common.sh
 
 echo -e "\e[36m>>>>>>>>>>>>  Install Nginx   <<<<<<<<<<<<\e[0m"
-dnf install nginx -y
+dnf install nginx -y &>>${log}
 
 echo -e "\e[36m>>>>>>>>>>>>  Copy RoboShop Configuration  <<<<<<<<<<<<\e[0m"
-cp nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf &>>${log}
 
 echo -e "\e[36m>>>>>>>>>>>>  Clean Old content  <<<<<<<<<<<<\e[0m"
-rm -rf /usr/share/nginx/html/*
+rm -rf /usr/share/nginx/html/* &>>${log}
 
 echo -e "\e[36m>>>>>>>>>>>>  Download Application Content   <<<<<<<<<<<<\e[0m"
-curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
+curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip &>>${log}
 
 
 cd /usr/share/nginx/html
 
 echo -e "\e[36m>>>>>>>>>>>>  Extract Application Content  <<<<<<<<<<<<\e[0m"
-unzip /tmp/frontend.zip
+unzip /tmp/frontend.zip &>>${log}
 
 
 echo -e "\e[36m>>>>>>>>>>>>  Start Nginx Service  <<<<<<<<<<<<\e[0m"
-systemctl enable nginx
-systemctl restart nginx
+systemctl enable nginx &>>${log}
+systemctl restart nginx &>>${log}
